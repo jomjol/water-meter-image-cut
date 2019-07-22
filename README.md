@@ -30,7 +30,7 @@ http://server-ip:3000/?url=http://picture-server/image.jpg
 
 The output is the following:
 
-   <img src="./image/server_output.jpg" width="400">
+   <img src="./images/server_output.jpg" width="400">
    
 
 
