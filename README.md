@@ -51,6 +51,23 @@ The structure of the config.ini is described in details here: []()
 
 <img src="./images/image_with_ROI.png" width="400"> 
 
+
+### Result
+
+The cutout ROIs are stored in the subdirectory "image_tmp" with the corresponding name:
+
+<img src="./images/ziffer1" width="30">
+<img src="./images/ziffer2" width="30"> 
+<img src="./images/ziffer3" width="30"> 
+<img src="./images/ziffer4" width="30"> 
+<img src="./images/ziffer5" width="30">  
+
+
+<img src="./images/zeiger1" width="60">
+<img src="./images/zeiger2" width="60">
+<img src="./images/zeiger3" width="60">
+<img src="./images/zeiger4" width="60">
+
 	
 ### Server Usage
 
