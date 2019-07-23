@@ -31,9 +31,10 @@ This step is done using the image processing of the OpenCV library. The position
 As reference structures fixed structures with a high contrast are very helpfull. They need to be unique and the position should be rouhly in a triangle. The picture of the reference structures is stored in the subdirectory "reference", the position is stored in the INI-file. The position is the upper left corner in the alignet image.
 
 Example of reference structures:
-<img src="./images/Ref_ZR.jpg" width="60"> 
-<img src="./images/Ref_m3.jpg" width="60"> 
-<img src="./images/Ref_x0.jpg" width="60"> 
+
+<img src="./images/Ref_ZR.jpg" width="40"> 
+<img src="./images/Ref_m3.jpg" width="40"> 
+<img src="./images/Ref_x0.jpg" width="40"> 
 
 Structure within the image:
 
@@ -56,17 +57,17 @@ The structure of the config.ini is described in details here: []()
 
 The cutout ROIs are stored in the subdirectory "image_tmp" with the corresponding name:
 
-<img src="./images/ziffer1" width="30">
-<img src="./images/ziffer2" width="30"> 
-<img src="./images/ziffer3" width="30"> 
-<img src="./images/ziffer4" width="30"> 
-<img src="./images/ziffer5" width="30">  
+<img src="./images/ziffer1.jpg" width="30">
+<img src="./images/ziffer2.jpg" width="30"> 
+<img src="./images/ziffer3.jpg" width="30"> 
+<img src="./images/ziffer4.jpg" width="30"> 
+<img src="./images/ziffer5.jpg" width="30">  
 
 
-<img src="./images/zeiger1" width="60">
-<img src="./images/zeiger2" width="60">
-<img src="./images/zeiger3" width="60">
-<img src="./images/zeiger4" width="60">
+<img src="./images/zeiger1.jpg" width="60">
+<img src="./images/zeiger2.jpg" width="60">
+<img src="./images/zeiger3.jpg" width="60">
+<img src="./images/zeiger4.jpg" width="60">
 
 	
 ### Server Usage
