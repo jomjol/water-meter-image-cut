@@ -7,17 +7,17 @@ The config.ini file contains the information for the Alignment and ROIs to proce
 * Digital_Counter
 
 
-## alignment
+## Alignment
 
-### main section [aligment]
+#### Main section [aligment]
 In the main sections the parameter for the rotation is stored:
 
 
 | Parameter        | Meaning           | Example        |
 | ------------- |:-------------:| ------------- |
-| initial_rotation_angle | Fixed rotation angle for prealigment | 'initial_rotation_angle=0' |
+| initial_rotation_angle | Fixed rotation angle for prealigment | ´initial_rotation_angle=0´ |
 
-### sub section for reference [alignment.ref0], ..., [alignment.ref2]
+#### sub section for reference [alignment.ref0], ..., [alignment.ref2]
 
 Here the details for the fine alignment references is stored. There need to be 3 subsections (alignment.ref0, alignment.ref1, alignment.ref2) to ensure the affine transformation:
 
@@ -28,7 +28,7 @@ Here the details for the fine alignment references is stored. There need to be 3
 | pos_y | y target coordinate (upper left corner) | 'pos_y=203' |
 
 
-### Definition of ROIs
+## Definition of ROIs
 For further process there is a separation into two types of ROIs: 
 
 * Analog_Counter: ROIs for analog counters
@@ -36,7 +36,7 @@ For further process there is a separation into two types of ROIs:
 
 The syntax of the parameters is identically for both categories.
 
-### main sectin ROIs [Digital_Digit], [Analog_Counter]
+#### Main sectin ROIs [Digital_Digit], [Analog_Counter]
 
 Here a list of the ROIs is defined. The number is not limited. For each ROI a line with 'name[]' needs to be added. Don't forget the bracket [] also for only one single ROI.
 
@@ -45,7 +45,7 @@ Here a list of the ROIs is defined. The number is not limited. For each ROI a li
 | name | naming of the ROI and reference to sub section | 'name[]="ziffer1"' |
 
 
-### sub section of individual ROIs [Digital_Digits.name], [Analog_Counter.name]
+#### Sub section of individual ROIs [Digital_Digits.name], [Analog_Counter.name]
 
 The naming of the sub section depends on the ROI naming defined in the main section. For every ROI "xyz" defined in the main section there needs to be either a corresponding sub section (e.g. [Digital_Digits.xyz] with the following content:
 
