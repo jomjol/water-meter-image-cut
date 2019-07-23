@@ -33,7 +33,7 @@ As reference structures fixed structures with a high contrast are very helpfull.
 Example of reference structures:
 
 <img src="./images/Ref_ZR.jpg" width="40"> 
-<img src="./images/Ref_m3.jpg" width="40"> 
+<img src="./images/Ref_m3.jpg" width="20"> 
 <img src="./images/Ref_x0.jpg" width="40"> 
 
 Structure within the image:
