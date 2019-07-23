@@ -31,13 +31,13 @@ This step is done using the image processing of the OpenCV library. The position
 As reference structures fixed structures with a high contrast are very helpfull. They need to be unique and the position should be rouhly in a triangle. The picture of the reference structures is stored in the subdirectory "reference", the position is stored in the INI-file. The position is the upper left corner in the alignet image.
 
 Example of reference structures:
-<img src="./images/Ref_ZR.jpg"> 
-<img src="./images/Ref_m3.jpg"> 
-<img src="./images/Ref_x0.jpg"> 
+<img src="./images/Ref_ZR.jpg" width="60"> 
+<img src="./images/Ref_m3.jpg" width="60"> 
+<img src="./images/Ref_x0.jpg" width="60"> 
 
 Structure within the image:
 
-<img src="./images/image_with_reference.png"> 
+<img src="./images/image_with_reference.png"  width="400"> 
 
 ### 3. Cutting the image
 Now the image is in an defined position and the ROIs can be cut and stored as individual pictures (here in the subdirectory "image_tmp").
@@ -49,7 +49,8 @@ In each category an arbitray number of ROIs can be defined and stored - taking i
 
 The structure of the config.ini is described in details here: []()
 
-<img src="./images/image_with_ROI.png"> 
+<img src="./images/image_with_ROI.png" width="400"> 
+
 	
 ### Server Usage
 
