@@ -59,7 +59,7 @@ The naming of the sub section depends on the ROI naming defined in the main sect
 
 # Remark
 
-**Currently there is no error handling implemented in the processing of the code. Therefore a carefull review of the ini file is substantial**
+**Currently there is no error handling implemented in the processing of the code. Therefore a carefull review of the ini file is substantial!**
 
 ## Example
 
