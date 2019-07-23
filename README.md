@@ -32,9 +32,7 @@ As reference structures fixed structures with a high contrast are very helpfull.
 
 Example of reference structures:
 
-<img src="./images/Ref_ZR.jpg" width="40"> 
-<img src="./images/Ref_m3.jpg" width="20"> 
-<img src="./images/Ref_x0.jpg" width="40"> 
+<img src="./images/Ref_ZR.jpg" width="40">  <img src="./images/Ref_m3.jpg" width="20">  <img src="./images/Ref_x0.jpg" width="40"> 
 
 Structure within the image:
 
@@ -57,17 +55,11 @@ The structure of the config.ini is described in details here: []()
 
 The cutout ROIs are stored in the subdirectory "image_tmp" with the corresponding name:
 
-<img src="./images/ziffer1.jpg" width="30">
-<img src="./images/ziffer2.jpg" width="30"> 
-<img src="./images/ziffer3.jpg" width="30"> 
-<img src="./images/ziffer4.jpg" width="30"> 
-<img src="./images/ziffer5.jpg" width="30">  
+<img src="./images/ziffer1.jpg" width="30"> <img src="./images/ziffer2.jpg" width="30"> <img src="./images/ziffer3.jpg" width="30"> <img src="./images/ziffer4.jpg" width="30"> <img src="./images/ziffer5.jpg" width="30">  
 
 
-<img src="./images/zeiger1.jpg" width="60">
-<img src="./images/zeiger2.jpg" width="60">
-<img src="./images/zeiger3.jpg" width="60">
-<img src="./images/zeiger4.jpg" width="60">
+<img src="./images/zeiger1.jpg" width="60"> <img src="./images/zeiger2.jpg" width="60">
+<img src="./images/zeiger3.jpg" width="60"> <img src="./images/zeiger4.jpg" width="60">
 
 	
 ### Server Usage
