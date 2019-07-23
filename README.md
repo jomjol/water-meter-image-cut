@@ -46,7 +46,7 @@ There are two categories for the cutting:
 
 In each category an arbitray number of ROIs can be defined and stored - taking into account different water meters. For each ROI a name, a position (pos_x,pos_y) and a dimension (dx, dy) must be specified.
 
-The structure of the config.ini is described in details here: []()
+The structure of the config.ini is described in details here: [Config.ini](Config_Description.md)
 
 <img src="./images/image_with_ROI.png" width="400"> 
 

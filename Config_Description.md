@@ -42,7 +42,7 @@ Here a list of the ROIs is defined. The number is not limited. For each ROI a li
 
 | Parameter        | Meaning           | Example        |
 | ------------- |:-------------:| ------------- |
-| name | naming of the ROI and reference to sub section | `name[]="ziffer1"` |
+| name[] | naming of the ROIs and references to sub section | `name[]="ziffer1"` |
 
 
 #### Sub section of individual ROIs [Digital_Digits.name], [Analog_Counter.name]
