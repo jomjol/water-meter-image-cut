@@ -2,9 +2,9 @@
 
 The config.ini file contains the information for the Alignment and ROIs to process the image. It consists of 3 main segments, which are described in the following sections:
 
-* alignment
-* Analog_Counter
-* Digital_Counter
+* `[alignment]`
+* `[Analog_Counter]`
+* `[Digital_Counter]`
 
 
 ## Alignment
@@ -15,17 +15,17 @@ In the main sections the parameter for the rotation is stored:
 
 | Parameter        | Meaning           | Example        |
 | ------------- |:-------------:| ------------- |
-| initial_rotation_angle | Fixed rotation angle for prealigment | ´initial_rotation_angle=0´ |
+| initial_rotation_angle | Fixed rotation angle for prealigment | `initial_rotation_angle=0` |
 
-#### sub section for reference [alignment.ref0], ..., [alignment.ref2]
+#### Sub section for reference [alignment.ref0], ..., [alignment.ref2]
 
 Here the details for the fine alignment references is stored. There need to be 3 subsections (alignment.ref0, alignment.ref1, alignment.ref2) to ensure the affine transformation:
 
 | Parameter        | Meaning           | Example        |
 | ------------- |:-------------:| ------------- |
-| image | link and name of reference picture | 'image="./reference/Ref_ZR.jpg"' |
-| pos_x | x target coordinate (upper left corner) | 'pos_x=70' |
-| pos_y | y target coordinate (upper left corner) | 'pos_y=203' |
+| image | link and name of reference picture | `image="./reference/Ref_ZR.jpg"` |
+| pos_x | x target coordinate (upper left corner) | `pos_x=70` |
+| pos_y | y target coordinate (upper left corner) | `pos_y=203` |
 
 
 ## Definition of ROIs
@@ -42,7 +42,7 @@ Here a list of the ROIs is defined. The number is not limited. For each ROI a li
 
 | Parameter        | Meaning           | Example        |
 | ------------- |:-------------:| ------------- |
-| name | naming of the ROI and reference to sub section | 'name[]="ziffer1"' |
+| name | naming of the ROI and reference to sub section | `name[]="ziffer1"` |
 
 
 #### Sub section of individual ROIs [Digital_Digits.name], [Analog_Counter.name]
@@ -51,10 +51,10 @@ The naming of the sub section depends on the ROI naming defined in the main sect
 
 | Parameter        | Meaning           | Example        |
 | ------------- |:-------------:| ------------- |
-| pos_x | x coordinate ROI (upper left corner) | 'pos_x=546' |
-| pos_y | y coordinate ROI (upper left corner) | 'pos_y=303' |
-| dx | x lenght of the ROI | 'dx=142' |
-| dy | y length of the ROI | 'dy=142' |
+| pos_x | x coordinate ROI (upper left corner) | `pos_x=546` |
+| pos_y | y coordinate ROI (upper left corner) | `pos_y=303` |
+| dx | x lenght of the ROI | `dx=142` |
+| dy | y length of the ROI | `dy=142` |
 
 
 ## Example
