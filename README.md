@@ -2,6 +2,9 @@
  
 This repository shows an option to cut an image into sub pieces, including an alignment with reference structures. The example is implemented as an HTTP-server, that takes as an input a link to an image and cuts it into previous defined parts. The information about the alignment and the parts are stored in an config file, that can be edited with any text programm.
 
+The image processing is used in a water meter measurement system. An overview can be found here: [https://github.com/jomjol/water-meter-measurement-system](https://github.com/jomjol/water-meter-measurement-system)
+
+
 To run the node.js code copy the whole [code](code) directory including subdirectory.
 
 Path are relative, so it should run immediatly with the following command:
