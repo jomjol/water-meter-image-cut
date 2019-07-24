@@ -39,7 +39,7 @@ Structure within the image:
 <img src="./images/image_with_reference.png"  width="400"> 
 
 ### 3. Cutting the image
-Now the image is in an defined position and the ROIs can be cut and stored as individual pictures (here in the subdirectory "image_tmp").
+Now the image is in a defined position and the ROIs can be cut and stored as individual pictures (here in the subdirectory "image_tmp").
 There are two categories for the cutting:
 * Analog_Counter
 * Digital_Digit
@@ -53,7 +53,7 @@ The structure of the config.ini is described in details here: [Config.ini](Confi
 
 ### Result
 
-The cutout ROIs are stored in the subdirectory "image_tmp" with the corresponding name:
+The cut out ROIs are stored in the subdirectory "image_tmp" with the corresponding name:
 
 <img src="./images/ziffer1.jpg" width="30"> <img src="./images/ziffer2.jpg" width="30"> <img src="./images/ziffer3.jpg" width="30"> <img src="./images/ziffer4.jpg" width="30"> <img src="./images/ziffer5.jpg" width="30">  
 

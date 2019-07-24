@@ -1,6 +1,6 @@
 # Description of the Config.ini
 
-The config.ini file contains the information for the Alignment and ROIs to process the image. It consists of 3 main segments, which are described in the following sections:
+The config.ini file contains the information for the alignment and ROIs to process the image. It consists of 3 main segments, which are described in the following sections:
 
 * `[alignment]`
 * `[Analog_Counter]`
@@ -14,22 +14,26 @@ In the main sections the parameter for the rotation is stored:
 
 
 | Parameter        | Meaning           | Example        |
-| ------------- |:-------------:| ------------- |
+| ------------- | ------------- | ------------- |
 | initial_rotation_angle | Fixed rotation angle for prealigment | `initial_rotation_angle=0` |
 
-#### Sub section for reference [alignment.ref0], ..., [alignment.ref2]
+#### Sub section for reference [alignment.ref0],[alignment.ref1], [alignment.ref2]
 
-Here the details for the fine alignment references is stored. There need to be 3 subsections (alignment.ref0, alignment.ref1, alignment.ref2) to ensure the affine transformation:
+Here the details for the fine alignment references are stored. There need to be 3 subsections ([alignment.ref0], [alignment.ref1], [alignment.ref2]) to ensure the affine transformation:
 
 | Parameter        | Meaning           | Example        |
-| ------------- |:-------------:| ------------- |
+| ------------- | ------------- | ------------- |
 | image | link and name of reference picture | `image="./reference/Ref_ZR.jpg"` |
 | pos_x | x target coordinate (upper left corner) | `pos_x=70` |
 | pos_y | y target coordinate (upper left corner) | `pos_y=203` |
 
 
 ## Definition of ROIs
-For further process there is a separation into two types of ROIs: 
+The ROIs are defined in two steps:
+1. name - main section
+2. details on position - sub section
+
+For further processing there are two types of ROIs distinguished: 
 
 * Analog_Counter: ROIs for analog counters
 * Digital_Digit: ROIs for digital digits for OCR
@@ -41,7 +45,7 @@ The syntax of the parameters is identically for both categories.
 Here a list of the ROIs is defined. The number is not limited. For each ROI a line with 'name[]' needs to be added. Don't forget the bracket [] also for only one single ROI.
 
 | Parameter        | Meaning           | Example        |
-| ------------- |:-------------:| ------------- |
+| ------------- | ------------- | ------------- |
 | name[] | naming of the ROIs and references to sub section | `name[]="ziffer1"` |
 
 
@@ -50,7 +54,7 @@ Here a list of the ROIs is defined. The number is not limited. For each ROI a li
 The naming of the sub section depends on the ROI naming defined in the main section. For every ROI "xyz" defined in the main section there needs to be either a corresponding sub section (e.g. [Digital_Digits.xyz] with the following content:
 
 | Parameter        | Meaning           | Example        |
-| ------------- |:-------------:| ------------- |
+| ------------- | ------------- | ------------- |
 | pos_x | x coordinate ROI (upper left corner) | `pos_x=546` |
 | pos_y | y coordinate ROI (upper left corner) | `pos_y=303` |
 | dx | x lenght of the ROI | `dx=142` |
