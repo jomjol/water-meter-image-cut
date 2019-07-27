@@ -11,7 +11,7 @@ Path are relative, so it should run immediatly with the following command:
 * `node water-meter-image-cut.js`
 
 ### Remarks
-* Python assumes some libraries to be installed using `pip install`:
+* Node assumes some libraries to be installed using `npm install`:
 	* `opencv4nodejs`
 	* `ini`
 	
