@@ -46,8 +46,8 @@ Here a list of the ROIs is defined. The number is not limited. For each ROI a li
 
 | Parameter        | Meaning           | Example        |
 | ------------- | ------------- | ------------- |
-| names | naming of the ROIs and references to sub section | `name="ziffer1, ziffer2, ziffer3` |
-| Modelfile | path to the Modelfile for the neural network | Modelfile=./config/neuralnets/Train_CNN_Digital-Readout_Version2.h5` |
+| names | naming of the ROIs and references to sub section | `name=ziffer1, ziffer2, ziffer3` |
+| Modelfile | path to the Modelfile for the neural network | `Modelfile=./config/neuralnets/Train_CNN_Digital-Readout_Version2.h5` |
 | LogImageLocation | path to storage of detected images for debugging / data collection. If this is empty, no logging will happen | `LogImageLocation=./log/digital_digit` |
 | LogNames | name of dedicated ROIs to be stored. If this is disabled, all ROIs will be logged (if enabled) | `LogNames=zeiger3, zeiger4` |
 
