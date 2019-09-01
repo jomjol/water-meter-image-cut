@@ -5,16 +5,18 @@ This repository shows an option to cut an image into sub pieces, including an al
 The image processing is used in a water meter measurement system. An overview can be found here: [https://github.com/jomjol/water-meter-measurement-system](https://github.com/jomjol/water-meter-measurement-system)
 
 
-To run the node.js code copy the whole [code](code) directory including subdirectory.
+## Version
+##### 1.0 Initial Version in NodeJS
+##### 2.0 Transfer from Node.JS to Python
+* Modification of INI-Structure needed, as Python is handling it slightly different than NodeJS
+
+To run the Python code copy the whole [code](code) directory including subdirectory.
 
 Path are relative, so it should run immediatly with the following command:
-* `node water-meter-image-cut.js`
+* `pip install requirements.txt`
+* `python water-meter-image-cut.py`
 
-### Remarks
-* Node assumes some libraries to be installed using `npm install`:
-	* `opencv4nodejs`
-	* `ini`
-	
+
 ## Processing the image
 
 The image processing is divided into three parts, which are explained in the following parts.
@@ -24,7 +26,7 @@ The image processing is divided into three parts, which are explained in the fol
 3. Cutting the image
 
 ### 1. Prealignment
-Within the prealignment the input image can be rotated by an fixed angle. This can be used for example to correc for headlong images or 90°. The angle can be choosen arbitrary and is stored in the INI-file (see []()).  
+Within the prealignment the input image can be rotated by an fixed angle. This can be used for example to correc for headlong images or 90°. The angle can be choosen arbitrary and is stored in the INI-file (see [Config_Description.md](Config_Description.md)).  
 
 ### 2. Fine Alignment
 The target of this step is to bring the image into a well defined position with respect to references to align aline the image for final cutting with fixed ROIs.

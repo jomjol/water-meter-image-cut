@@ -23,7 +23,7 @@ Here the details for the fine alignment references are stored. There need to be 
 
 | Parameter        | Meaning           | Example        |
 | ------------- | ------------- | ------------- |
-| image | link and name of reference picture | `image="./reference/Ref_ZR.jpg"` |
+| image | link and name of reference picture | `image=./reference/Ref_ZR.jpg` |
 | pos_x | x target coordinate (upper left corner) | `pos_x=70` |
 | pos_y | y target coordinate (upper left corner) | `pos_y=203` |
 
@@ -46,7 +46,10 @@ Here a list of the ROIs is defined. The number is not limited. For each ROI a li
 
 | Parameter        | Meaning           | Example        |
 | ------------- | ------------- | ------------- |
-| name[] | naming of the ROIs and references to sub section | `name[]="ziffer1"` |
+| names | naming of the ROIs and references to sub section | `name="ziffer1, ziffer2, ziffer3` |
+| Modelfile | path to the Modelfile for the neural network | Modelfile=./config/neuralnets/Train_CNN_Digital-Readout_Version2.h5` |
+| LogImageLocation | path to storage of detected images for debugging / data collection. If this is empty, no logging will happen | `LogImageLocation=./log/digital_digit` |
+| LogNames | name of dedicated ROIs to be stored. If this is disabled, all ROIs will be logged (if enabled) | `LogNames=zeiger3, zeiger4` |
 
 
 #### Sub section of individual ROIs [Digital_Digits.name], [Analog_Counter.name]
@@ -72,32 +75,31 @@ The naming of the sub section depends on the ROI naming defined in the main sect
 initial_rotation_angle=0
 
 [alignment.ref0]
-image="./reference/Ref_ZR.jpg"
+image=./config/Ref_ZR.jpg
 pos_x=70
 pos_y=203
 
 [alignment.ref1]
-image="./reference/Ref_m3.jpg"
+image=./config/Ref_m3.jpg
 pos_x=575
 pos_y=79
 
 [alignment.ref2]
-image="./reference/Ref_x0.jpg"
+image=./config/Ref_x0.jpg
 pos_x=308
 pos_y=406
 
 [Digital_Digit]
-name[]="ziffer1"
-name[]="ziffer2"
-name[]="ziffer3"
-name[]="ziffer4"
-name[]="ziffer5"
+names=ziffer1, ziffer2, ziffer3, ziffer4, ziffer5
+Modelfile=./config/neuralnets/Train_CNN_Digital-Readout_Version2.h5
+LogImageLocation=./log/digital_digit
+#LogNames=zeiger3, zeiger4
 
 [Analog_Counter]
-name[]="zeiger1"
-name[]="zeiger2"
-name[]="zeiger3"
-name[]="zeiger4"
+names=zeiger1, zeiger2, zeiger3, zeiger4
+Modelfile=./config/neuralnets/Train_CNN_Analog-Readout_Version2.h5
+LogImageLocation=./log/analog_counter
+#LogNames=zeiger3, zeiger4
 
 [Analog_Counter.zeiger1]
 pos_x=546
@@ -153,5 +155,6 @@ pos_x=487
 pos_y=49
 dx=55
 dy=90
+
 ~~~~
 
