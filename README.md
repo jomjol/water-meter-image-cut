@@ -10,6 +10,8 @@ The image processing is used in a water meter measurement system. An overview ca
 ##### 2.0 Transfer from Node.JS to Python
 * Modification of INI-Structure needed, as Python is handling it slightly different than NodeJS
 
+## Setup
+
 To run the Python code copy the whole [code](code) directory including subdirectory.
 
 Path are relative, so it should run immediatly with the following command:
@@ -26,7 +28,7 @@ The image processing is divided into three parts, which are explained in the fol
 3. Cutting the image
 
 ### 1. Prealignment
-Within the prealignment the input image can be rotated by an fixed angle. This can be used for example to correc for headlong images or 90°. The angle can be choosen arbitrary and is stored in the INI-file (see [Config_Description.md](Config_Description.md)).  
+Within the prealignment the input image can be rotated by an fixed angle. This can be used for example to correc for headlong images or 90°. The angle can be choosen arbitrary and is stored in the INI-file (see [Description of Config.INI](Config_Description.md)).  
 
 ### 2. Fine Alignment
 The target of this step is to bring the image into a well defined position with respect to references to align aline the image for final cutting with fixed ROIs.
