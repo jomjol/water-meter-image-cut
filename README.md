@@ -28,7 +28,7 @@ The image processing is divided into three parts, which are explained in the fol
 3. Cutting the image
 
 ### 1. Prealignment
-Within the prealignment the input image can be rotated by an fixed angle. This can be used for example to correc for headlong images or 90°. The angle can be choosen arbitrary and is stored in the INI-file (see [Description of Config.INI](Config_Description.md)).  
+Within the prealignment the input image can be rotated by an fixed angle. This can be used for example to correc for headlong images or 90°. The angle can be choosen arbitrary and is stored in the INI-file ***(see [Description of Config.INI](Config_Description.md))***.  
 
 ### 2. Fine Alignment
 The target of this step is to bring the image into a well defined position with respect to references to align aline the image for final cutting with fixed ROIs.
