@@ -74,7 +74,7 @@ The cut out ROIs are stored in the subdirectory "image_tmp" with the correspondi
 To run the node.js code copy the whole [code](code) directory including subdirectory.
 
 Path are relative, so it should run immediatly with the following command:
-* `node water-meter-image-cut.js`
+* `python water-meter-image-cut.py`
 
 
 
