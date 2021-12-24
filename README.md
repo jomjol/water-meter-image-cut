@@ -1,3 +1,5 @@
+<span style="color: red;">This code is depreciated and will not be maintained any more!</span> 
+
 # water-meter-image-cut
  
 This repository shows an option to cut an image into sub pieces, including an alignment with reference structures. The example is implemented as an HTTP-server, that takes as an input a link to an image and cuts it into previous defined parts. The information about the alignment and the parts are stored in an config file, that can be edited with any text programm.
